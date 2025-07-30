@@ -2,12 +2,16 @@
 const mongoose = require("mongoose");
 
 const locationSchema = new mongoose.Schema({
-  ip: String,
+   ip: String,
   city: String,
-  region: String,
   country: String,
   latitude: Number,
   longitude: Number,
+  page: String,
+  referrer: String,
+  language: String,
+  deviceType: String,
+  userAgent: String,
   timestamp: String,
 });
 
